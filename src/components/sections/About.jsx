@@ -21,7 +21,7 @@ export default function About() {
 
           <div className="about-right">
             <p className="about-text">
-              Ancien magasinier gestionnaire de stock et pizzaïolo, j'ai choisi de me reconvertir dans le développement web pour trouver un métier qui me corresponde vraiment. Dès mes premiers projets, j'ai compris que j'avais trouvé ma voie.
+              Issu d’un parcours dans la logistique et la restauration, j’ai entrepris une reconversion dans le développement web, un domaine qui me passionne depuis mes premiers projets.
             </p>
             <p className="about-text">
               J'ai énormément d'imagination et j'aime donner vie à mes idées. Ce qui me différencie, c'est cette capacité à créer quelque chose de toutes pièces — voir un projet naître de zéro et prendre forme, c'est ce qui me motive profondément.
