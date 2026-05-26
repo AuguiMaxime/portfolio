@@ -1,0 +1,10 @@
+// ============================================
+// IMPORTS SCSS GLOBAUX
+// L'ordre est important :
+// 1. Variables (utilisées partout)
+// 2. Mixins (utilisent les variables)
+// 3. Reset + styles de base (utilisent les deux)
+// ============================================
+@use 'styles/variables' as *;
+@use 'styles/mixins' as *;
+@use 'styles/reset';

@@ -1,0 +1,68 @@
+// ============================================
+// COULEURS
+// ============================================
+$bg-primary:     #0D0D0D;
+$bg-secondary:   #1A1A2E;
+$bg-card:        #16213E;
+
+$accent-cyan:    #00D4FF;
+$accent-purple:  #7B2FBE;
+
+$text-primary:   #F0F0F0;
+$text-muted:     #A0A0B0;
+$text-dark:      #606070;
+
+$border-cyan:        rgba(0, 212, 255, 0.15);
+$border-cyan-hover:  rgba(0, 212, 255, 0.3);
+
+$error:          #FF6B6B;
+
+// ============================================
+// TYPOGRAPHIE
+// ============================================
+$font-heading:   'Space Grotesk', sans-serif;
+$font-body:      'Inter', sans-serif;
+
+$font-size-xs:   12px;
+$font-size-sm:   13px;
+$font-size-base: 14px;
+$font-size-md:   15px;
+$font-size-lg:   18px;
+$font-size-xl:   20px;
+
+// ============================================
+// ESPACEMENTS
+// ============================================
+$section-padding:  96px 24px;
+$container-width:  1000px;
+
+$radius-sm:   6px;
+$radius-md:   8px;
+$radius-lg:   12px;
+$radius-full: 50%;
+
+// ============================================
+// BREAKPOINTS
+// ============================================
+$bp-sm:   480px;
+$bp-md:   768px;
+$bp-lg:   1024px;
+
+// ============================================
+// VARIABLES CSS (exposées pour les .css composants)
+// ============================================
+:root {
+  --bg-primary:        #{$bg-primary};
+  --bg-secondary:      #{$bg-secondary};
+  --bg-card:           #{$bg-card};
+  --accent-cyan:       #{$accent-cyan};
+  --accent-purple:     #{$accent-purple};
+  --text-primary:      #{$text-primary};
+  --text-muted:        #{$text-muted};
+  --text-dark:         #{$text-dark};
+  --border-cyan:       #{$border-cyan};
+  --border-cyan-hover: #{$border-cyan-hover};
+  --error:             #{$error};
+  --font-heading:      #{$font-heading};
+  --font-body:         #{$font-body};
+}

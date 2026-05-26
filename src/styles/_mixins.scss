@@ -1,0 +1,82 @@
+@use 'variables' as *;
+
+// ============================================
+// MEDIA QUERIES
+// ============================================
+@mixin mobile {
+  @media (max-width: #{$bp-md}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$bp-sm}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$bp-md}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: #{$bp-lg}) {
+    @content;
+  }
+}
+
+// ============================================
+// HELPERS
+// ============================================
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin section-base {
+  padding: $section-padding;
+
+  .section-inner {
+    max-width: $container-width;
+    margin: 0 auto;
+  }
+}
+
+@mixin card-base {
+  background: $bg-card;
+  border: 1px solid $border-cyan;
+  border-radius: $radius-lg;
+}
+
+@mixin btn-base {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: $radius-md;
+  font-size: $font-size-base;
+  font-weight: 500;
+  font-family: $font-heading;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+@mixin cyan-border {
+  border: 1px solid $border-cyan;
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: $border-cyan-hover;
+  }
+}

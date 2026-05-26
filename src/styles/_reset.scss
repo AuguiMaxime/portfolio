@@ -1,0 +1,140 @@
+@use 'variables' as *;
+
+// ============================================
+// RESET
+// ============================================
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+// ============================================
+// BASE
+// ============================================
+body {
+  background-color: $bg-primary;
+  color: $text-primary;
+  font-family: $font-body;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: $font-body;
+}
+
+ul {
+  list-style: none;
+}
+
+// ============================================
+// SELECTION
+// ============================================
+::selection {
+  background-color: $accent-cyan;
+  color: $bg-primary;
+}
+
+// ============================================
+// SCROLLBAR
+// ============================================
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: $bg-primary;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $accent-purple;
+  border-radius: 3px;
+}
+
+// ============================================
+// CLASSES UTILITAIRES GLOBALES
+// ============================================
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 64px;
+  color: $text-primary;
+
+  span {
+    color: $accent-cyan;
+  }
+}
+
+.btn-primary {
+  @extend %btn-shared;
+  background: $accent-cyan;
+  color: $bg-primary;
+}
+
+.btn-outline {
+  @extend %btn-shared;
+  border: 1px solid $accent-cyan;
+  color: $accent-cyan;
+  background: transparent;
+}
+
+.btn-purple {
+  @extend %btn-shared;
+  background: $accent-purple;
+  color: $text-primary;
+}
+
+// Placeholder pour les boutons
+%btn-shared {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: $radius-md;
+  font-size: $font-size-base;
+  font-weight: 500;
+  font-family: $font-heading;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: $radius-sm;
+  font-size: $font-size-base;
+  font-weight: 500;
+  cursor: pointer;
+  background: transparent;
+  color: $text-muted;
+  border: 1px solid $border-cyan-hover;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $accent-cyan;
+    border-color: $accent-cyan;
+  }
+
+  &.active {
+    background: $accent-cyan;
+    color: $bg-primary;
+    border-color: $accent-cyan;
+  }
+}

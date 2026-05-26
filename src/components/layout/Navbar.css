@@ -1,0 +1,130 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  padding: 12px 0;
+  background: rgba(13, 13, 13, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-cyan);
+}
+
+.navbar-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  color: var(--accent-cyan);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+.navbar-link {
+  color: var(--text-muted);
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.navbar-link:hover {
+  color: var(--accent-cyan);
+}
+
+.navbar-cv {
+  color: var(--accent-cyan);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: 1px solid var(--accent-cyan);
+  border-radius: 6px;
+  transition: opacity 0.2s;
+}
+
+.navbar-cv:hover {
+  opacity: 0.8;
+}
+
+.navbar-burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.burger-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--accent-cyan);
+  transition: all 0.3s ease;
+}
+
+.burger-line.open-top {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-line.open-middle {
+  opacity: 0;
+}
+
+.burger-line.open-bottom {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.mobile-menu {
+  background: rgba(13, 13, 13, 0.98);
+  padding: 16px 24px 24px;
+}
+
+.mobile-menu-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mobile-menu-link {
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.mobile-cv {
+  display: inline-block;
+  color: var(--accent-cyan);
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 1px solid var(--accent-cyan);
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-burger {
+    display: flex;
+  }
+}
