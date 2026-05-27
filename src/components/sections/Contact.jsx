@@ -1,10 +1,16 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
+
+const SERVICE_ID = "service_5hbwcim";
+const TEMPLATE_ID = "template_fbyz5u5";
+const PUBLIC_KEY = "yvrC4ENlIhbm4ajvE";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState({});
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
 
   const validate = () => {
     const newErrors = {};
@@ -26,15 +32,33 @@ export default function Contact() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = validate();
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
       return;
     }
-    setSent(true);
-    setForm({ name: "", email: "", message: "" });
+    setSending(true);
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.message,
+        },
+        PUBLIC_KEY
+      );
+      setSent(true);
+      setForm({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Erreur envoi email:", error);
+      alert("Une erreur est survenue, veuillez réessayer.");
+    } finally {
+      setSending(false);
+    }
   };
 
   if (sent) {
@@ -111,8 +135,8 @@ export default function Contact() {
             {errors.message && <p id="message-error" className="form-error" role="alert">{errors.message}</p>}
           </div>
 
-          <button type="submit" className="btn-primary" style={{ alignSelf: "flex-start" }}>
-            Envoyer le message
+          <button type="submit" className="btn-primary" disabled={sending}>
+            {sending ? "Envoi en cours..." : "Envoyer le message"}
           </button>
         </form>
       </div>
