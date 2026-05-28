@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <p className="footer-text">© {year} Maxime Augui — Développeur Full-Stack</p>
-      <p className="footer-sub">Conçu et développé avec React + Tailwind CSS</p>
+      <p className="footer-sub">Conçu et développé avec React + CSS</p>
     </footer>
   );
 }

@@ -31,7 +31,7 @@ src/
 ├── data/
 │   ├── projects.js   # Données des projets
 │   └── skills.js     # Liste des compétences
-└── assets/           # CV PDF, screenshots
+└── public/           # CV PDF, screenshots
 ```
 
 ## Projets présentés
@@ -43,8 +43,4 @@ src/
 
 Site déployé sur [Vercel](https://vercel.com) avec déploiement automatique depuis GitHub.
 
-Modifs:
 
-git add .
-git commit -m "message"
-git push

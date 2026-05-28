@@ -10,7 +10,7 @@ import "./App.css";
 export default function App() {
   return (
     <>
-      {/* Lien d'évitement pour la navigation clavier — accessibilité */}
+      {}
       <a href="#main-content" className="skip-link">
         Aller au contenu principal
       </a>
