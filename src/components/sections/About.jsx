@@ -29,6 +29,9 @@ export default function About() {
             <p className="about-text">
               En 6 mois de formation intensive, j'ai acquis une stack complète : React et Node.js côté full-stack. Je suis capable de travailler des heures sans voir le temps passer.
             </p>
+            <p className="about-text">
+              Mon objectif est de rejoindre une équipe dynamique ou de réaliser des missions en tant que développeur React, afin de contribuer à la création d’applications modernes, performantes et centrées utilisateur.
+              </p>
             <a href="#contact" className="btn-purple">Me contacter</a>
           </div>
         </div>
