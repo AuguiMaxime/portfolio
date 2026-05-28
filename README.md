@@ -44,7 +44,7 @@ src/
 Site déployé sur [Vercel](https://vercel.com) avec déploiement automatique depuis GitHub.
 
 Modifs:
-git init
+
 git add .
 git commit -m "message"
 git push

@@ -27,7 +27,7 @@ export default function About() {
               J'ai énormément d'imagination et j'aime donner vie à mes idées. Ce qui me différencie, c'est cette capacité à créer quelque chose de toutes pièces — voir un projet naître de zéro et prendre forme, c'est ce qui me motive profondément.
             </p>
             <p className="about-text">
-              En 6 mois de formation intensive, j'ai acquis une stack complète : React et Node.js côté full-stack. Je suis capable de travailler des heures sans voir le temps passer tellement je suis passionné.
+              En 6 mois de formation intensive, j'ai acquis une stack complète : React et Node.js côté full-stack. Je suis capable de travailler des heures sans voir le temps passer.
             </p>
             <a href="#contact" className="btn-purple">Me contacter</a>
           </div>
