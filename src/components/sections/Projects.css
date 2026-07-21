@@ -4,7 +4,7 @@
 }
 
 .projects-inner {
-  max-width: 1000px;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
@@ -37,5 +37,11 @@
 @media (min-width: 1024px) {
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .projects-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

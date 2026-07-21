@@ -42,9 +42,12 @@ export default function ProjectCard({ project }) {
             <p className="project-card-description">{description}</p>
           </div>
           <div className="project-card-tags">
-            {tags.map((tag) => (
+            {tags.slice(0, 4).map((tag) => (
               <span key={tag} className="project-card-tag">{tag}</span>
             ))}
+            {tags.length > 4 && (
+              <span className="project-card-tag project-card-tag-more">+{tags.length - 4}</span>
+            )}
           </div>
           <div className="project-card-links">
             {github && (

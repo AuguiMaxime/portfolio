@@ -116,6 +116,110 @@ export const projects = [
       "Configuration et publication du build de production Android (Gradle, signing, Play Store)",
     ],
   },
+  {
+    id: 7,
+    title: "Fontanier — Plomberie & Chauffage",
+    category: "Vitrines",
+    description:
+      "Site vitrine pour un plombier-chauffagiste indépendant. Identité industrielle (laiton, cuivre), jauge de disponibilité animée et mise en avant des prestations pour générer des demandes de devis.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: "/screenshots/fontanier.png",
+    github: "https://github.com/AuguiMaxime/fontanier-plomberie",
+    demo: "https://fontanier-plomberie.vercel.app/",
+    context: "Site vitrine — Projet personnel",
+    skills: [
+      "Direction artistique sur-mesure (thème industriel)",
+      "Animations CSS/JS (jauge de disponibilité, tuyau décoratif)",
+      "Site 100% HTML/CSS/JS sans framework",
+      "Orienté conversion (devis, appel direct)",
+    ],
+  },
+  {
+    id: 8,
+    title: "Chez Auguste",
+    category: "Vitrines",
+    description:
+      "Site vitrine pour un bistrot de saison. Identité \"carnet de marché\" avec une ardoise en craie animée qui change au rythme des arrivages, pensée pour valoriser une cuisine qui suit le marché.",
+    tags: ["React", "Vite", "CSS"],
+    image: "/screenshots/chezauguste.png",
+    github: "https://github.com/AuguiMaxime/chez-auguste",
+    demo: "https://chez-auguste.vercel.app/",
+    context: "Site vitrine — Projet personnel",
+    skills: [
+      "Direction artistique sur-mesure (carnet de marché, ardoise craie)",
+      "Composants React réutilisables (ardoise dynamique, galerie)",
+      "Design orienté réservation",
+    ],
+  },
+  {
+    id: 9,
+    title: "BRUT — Atelier d'architecture",
+    category: "Vitrines",
+    description:
+      "Site vitrine pour un cabinet d'architecte. Esthétique \"planche de plan technique\" (béton/charbon/orange) avec un plan qui se dessine à l'écran, et une approche mobile-first poussée.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: "/screenshots/brut.png",
+    github: "https://github.com/AuguiMaxime/brut-architecture",
+    demo: "https://brut-architecture.vercel.app/",
+    context: "Site vitrine — Projet personnel",
+    skills: [
+      "Direction artistique sur-mesure (planche technique animée)",
+      "Animation SVG (plan qui se dessine)",
+      "Mobile-first poussé",
+      "Site 100% HTML/CSS/JS sans framework",
+    ],
+  },
+  {
+    id: 10,
+    title: "VOLT — Studio capillaire",
+    category: "Vitrines",
+    description:
+      "Site vitrine pour un salon de coiffure. Identité cyberpunk (noir/magenta/cyan), effet glitch RGB, grille néon et curseur avant/après pour visualiser les transformations.",
+    tags: ["React", "Vite", "CSS"],
+    image: "/screenshots/volt.png",
+    github: "https://github.com/AuguiMaxime/volt-salon",
+    demo: "https://volt-salon.vercel.app/",
+    context: "Site vitrine — Projet personnel",
+    skills: [
+      "Direction artistique sur-mesure (cyberpunk, glitch RGB)",
+      "Composant interactif curseur avant/après",
+      "Design orienté prise de rendez-vous",
+    ],
+  },
+  {
+    id: 11,
+    title: "L'Arrière-Salle",
+    category: "Vitrines",
+    description:
+      "Site vitrine pour un bar à cocktails caché. Univers \"art déco clandestin\" (noir/émeraude/or) avec un widget \"toc-toc\" interactif reproduisant l'entrée discrète du lieu.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: "/screenshots/arrieresalle.png",
+    github: "https://github.com/AuguiMaxime/arriere-salle",
+    demo: "https://arriere-salle.vercel.app/",
+    context: "Site vitrine — Projet personnel",
+    skills: [
+      "Direction artistique sur-mesure (art déco clandestin)",
+      "Widget interactif sur-mesure (toc-toc)",
+      "Site 100% HTML/CSS/JS sans framework",
+    ],
+  },
+  {
+    id: 12,
+    title: "TRAIT — Studio de tatouage",
+    category: "Vitrines",
+    description:
+      "Site vitrine pour un studio de tatouage. Esthétique blackwork minimaliste (noir/blanc/rouge) avec une planche flash numérotée mettant en avant les pièces disponibles.",
+    tags: ["React", "Vite", "CSS"],
+    image: "/screenshots/ink.png",
+    github: "https://github.com/AuguiMaxime/ink-studio",
+    demo: "https://ink-studio-neon.vercel.app/",
+    context: "Site vitrine — Projet personnel",
+    skills: [
+      "Direction artistique sur-mesure (blackwork minimaliste)",
+      "Planche flash numérotée dynamique",
+      "Design orienté prise de consultation",
+    ],
+  },
 ];
 
-export const filters = ["Tous", "Formation", "Perso", "Mobile"];
+export const filters = ["Tous", "Formation", "Perso", "Mobile", "Vitrines"];

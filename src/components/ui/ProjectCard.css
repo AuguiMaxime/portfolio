@@ -28,7 +28,6 @@
 }
 
 .project-card-img-portrait {
-  height: 260px;
   background: linear-gradient(180deg, rgba(0, 212, 255, 0.05), rgba(124, 58, 237, 0.08));
 }
 
@@ -109,18 +108,28 @@
   font-size: 18px;
   font-weight: 700;
   margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .project-card-description {
   color: var(--text-muted);
   font-size: 14px;
   line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .project-card-tags {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   gap: 8px;
+  min-height: 58px;
 }
 
 .project-card-tag {
@@ -130,6 +139,12 @@
   font-size: 12px;
   padding: 4px 12px;
   border-radius: 20px;
+}
+
+.project-card-tag-more {
+  background: transparent;
+  color: var(--text-muted);
+  opacity: 0.8;
 }
 
 .project-card-links {
